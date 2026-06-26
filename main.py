@@ -1,21 +1,11 @@
-# download_images.py
-
 import os
 import requests
 from PIL import Image
 from io import BytesIO
 
-# ==========================================
-# CHANGE THIS TO YOUR TARGET FOLDER
-# ==========================================
-
 SAVE_DIR = (
     r"C:\\Users\\natha\\ip\\web_dev\\betting_website_clone\\public\\game-grid\\fishing"
 )
-
-# ==========================================
-# IMAGE URLS
-# ==========================================
 
 IMAGE_URLS = [
     "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/60.png",
@@ -37,11 +27,6 @@ IMAGE_URLS = [
     "https://ossimg.yuk87k786d.com/sikkim/gamelogo/CQ9/AT01.png",
     "https://ossimg.91admin123admin.com/91club/gamelogo/JILI/1.png",
 ]
-
-
-# ==========================================
-# DOWNLOAD SCRIPT
-# ==========================================
 
 os.makedirs(SAVE_DIR, exist_ok=True)
 
